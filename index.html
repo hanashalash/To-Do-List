@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style-index.css" />
+  </head>
+  <body>
+    <div class="hero-img">
+      <div class="title container">
+        <div class="to-do-title p-2">
+          <h1 class="text-center p-5 mt-5 text-white rounded-1 fw-bolder">
+            To Do List
+          </h1>
+        </div>
+      </div>
+      <div class="to-do-form p-2 rounded-1 w-75 mx-auto">
+        <div
+          class="input-wrapper d-flex justify-content-center align-items-center"
+        >
+          <input
+            type="text"
+            placeholder="Create a new to do..."
+            class="form-control mt-2 input-field w-50"
+            name="task"
+            id="task"
+            autofocus
+          />
+          <button
+            class="add btn btn-light mt-2 mx-2 submit-btn"
+            type="submit"
+            id="add"
+          >
+            Add
+          </button>
+          <button
+            class="update btn btn-warning mt-2 mx-2 update-btn d-none"
+            id="update"
+          >
+            Update
+          </button>
+        </div>
+      </div>
+      <div class="to-do-display mt-2 px-2 pb-2 rounded-1 w-50 mx-auto">
+        <table class="table taskTable overflow-hidden">
+          <thead>
+            <tr class="">
+              <th>Serial</th>
+              <th>Task</th>
+              <th>Update</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="display"></tbody>
+        </table>
+        <!-- <div class="item pt-2 px-2 rounded-1">
+          <p class="d-flex justify-content-between pt-1 px-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, vero
+            quidem libero odit fuga delectus.
+            <i class="fa-solid fa-pen fs-6 text-warning"></i>
+            <i class="fa-solid fa-trash text-danger"></i>
+          </p>
+        </div> -->
+
+        <div class="display-footer d-flex align-items-center justify-content-between mt-3">
+          <div class="text-center ms-5" id="counter"> items left</div>
+          <div class="">
+            <div class="d-flex justify-content-around align-items-center">
+              <div class="text-center mx-2">All</div>
+              <div class="text-center mx-2">Pending</div>
+              <div class="text-center mx-2">Done</div>
+            </div>
+          </div>
+          <div class="text-center me-5">Clear</div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/afef953f3b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
