@@ -1,24 +1,52 @@
-.hero-img{
-    background-image: url(./images/hero3.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 42vh;
-    width: 100%;
+.hero-img {
+  background-image: url(./images/hero3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 42vh;
+  width: 100%;
+  position: relative;
 }
 
-.item{
-    border-bottom: 1px solid black;
+.item {
+  border-bottom: 1px solid black;
 }
 
-.taskTable{
-    border: 1px solid rgba(0, 0, 0, 0.1); 
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); 
-    padding: 10px;
+.taskTable {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 10px;
 }
 
+.display-footer {
+  border-top: 1px dotted rgba(0, 0, 0, 0.3);
+  padding-top: 5px;
+}
 
-.display-footer{
-    border-top: 1px dotted rgba(0, 0, 0, 0.3);
-    padding-top: 5px; 
+#clearList {
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* .active {
+  color: rgb(43, 103, 255);
+  font-weight: 700;
+  text-decoration: underline;
+} */
+
+.status {
+  cursor: pointer;
+}
+
+.weather {
+  width: 10%;
+  height: 30%;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  background-color: rgba(251, 201, 201, 0.3);
 }
