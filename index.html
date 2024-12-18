@@ -16,12 +16,14 @@
     <div class="hero-img">
       <div class="title container">
         <div class="to-do-title p-2">
-          <h1 class="text-center p-5 mt-5 text-white rounded-1 fw-bolder">
-            To Do List
-          </h1>
+          <h1 class="text-center p-5 mt-5 text-white rounded-1">To Do List</h1>
         </div>
       </div>
-      <div class="to-do-form p-2 rounded-1 w-75 mx-auto">
+      <div
+        id="weather"
+        class="weather rounded-5 d-flex justify-content-center align-items-center"
+      ></div>
+      <div class="container to-do-form p-2 rounded-1 w-75 mx-auto">
         <div
           class="input-wrapper d-flex justify-content-center align-items-center"
         >
@@ -51,8 +53,8 @@
       <div class="to-do-display mt-2 px-2 pb-2 rounded-1 w-50 mx-auto">
         <table class="table taskTable overflow-hidden">
           <thead>
-            <tr class="">
-              <th>Serial</th>
+            <tr>
+              <th>Status</th>
               <th>Task</th>
               <th>Update</th>
               <th>Delete</th>
@@ -69,16 +71,25 @@
           </p>
         </div> -->
 
-        <div class="display-footer d-flex align-items-center justify-content-between mt-3">
-          <div class="text-center ms-5" id="counter"> items left</div>
-          <div class="">
-            <div class="d-flex justify-content-around align-items-center">
-              <div class="text-center mx-2">All</div>
-              <div class="text-center mx-2">Pending</div>
-              <div class="text-center mx-2">Done</div>
-            </div>
+        <div
+          class="display-footer d-flex align-items-center justify-content-between mt-3"
+        >
+          <div class="text-center ms-5">
+            <span id="counter"></span> pending tasks left
           </div>
-          <div class="text-center me-5">Clear</div>
+          <div>
+            <!-- <div class="d-flex justify-content-around align-items-center">
+              <div class="text-center mx-2 active status" id="showAll">All</div>
+              <div class="text-center mx-2 status" id="showPending">Pending</div>
+              <div class="text-center mx-2 status" id="showDone">Done</div>
+            </div> -->
+          </div>
+          <div
+            class="text-center me-5 text-danger cursor:pointer fw-bold"
+            id="clearList"
+          >
+            Clear All
+          </div>
         </div>
       </div>
     </div>
@@ -92,6 +103,7 @@
       src="https://kit.fontawesome.com/afef953f3b.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./main.js"></script>
   </body>
 </html>
